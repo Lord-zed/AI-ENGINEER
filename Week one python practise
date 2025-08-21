@@ -1,0 +1,45 @@
+# Basic usage of print
+print("I am under the blood ")
+# Using print with variables
+name= " Temidayo"
+Age= "23"
+print("My name is:", name)
+print(f"By this time next year i will be {Age} yrs")
+      
+print(f"my name is{name} i am {Age} yrs")
+# Using string concatenation
+first_name = "Ada"
+last_name = "Lovelace"
+print("Full name: " + first_name + " " + last_name)
+print(" Details is :" + name + " " + Age)
+# using comma
+print( "My name is", last_name, "I am", Age)
+# Escape sequences in print - "\n", "\t"
+print(" That which i am \n One temper of hroic heart \n made weak by faith and time ")
+print("the time\tis near\nthe time\tis near")
+print("He said, \"Hello\"")        # Quoted string
+print('It\'s Python!')
+# Quotes inside string
+print("i am om my way, to \' hello\'")
+# Backslash
+print("File path: C:\\Users\\Aisha\\Documents")
+# Backspace (\b)
+print("Helloo\b")
+print("*********\n *******\n  *****\n   ***\n    *")  
+print("*********\n *******\n  *****\n   ***\n    *\n    *\n   ***\n  *****\n *******\n*********")  
+# Using sep and end in print
+print("Python", "is", "fun", sep=" - ")
+print("This is the first line.", end=" ")
+print("This is the second line.")
+# Task2
+my_name= "Taiwo"
+my_SOO= "Ogun state"
+my_class= "Graduate"
+Best_Sub= "Statistics"
+print("My name is", my_name, " and i am from", my_SOO )
+# Task3
+print("Simple Timetable\nDay\t       Time\t         Subject\nMon\t       12am\t         Maths\nTue\t       10am\t         Econs\nWed\t       12am\t         Engs")
+# Task4
+print(f"My name is {my_name} i am a {my_class} my best subject is {Best_Sub}")
+#Task5
+
