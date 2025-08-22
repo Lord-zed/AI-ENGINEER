@@ -33,3 +33,11 @@ print("File path: c:\\users\\Aisha\\")
 
 # Carriage return (\r)
 print("123456\rABC")  # Output: ABC456 (replaces 123)
+
+# Backspace (\b)
+print("Helloo\b")  # Output: Hello
+
+# Using sep and end in print
+print("Python", "is", "fun", sep=" - ")
+print("This is the first line.", end=" ")
+print("This is the second line.")
