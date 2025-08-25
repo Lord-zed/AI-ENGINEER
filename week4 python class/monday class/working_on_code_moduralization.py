@@ -175,15 +175,15 @@
 # # change the arrangement and watch the output
 # introduce(track = "AI Engineering",name = "Ngozi")
 
-# DEFAULT ARGUMENTS
-# def introduce(name, track = "AI Engineering"):
-#     print("My name is", name)
-#     print("I am learning", track)
+#DEFAULT ARGUMENTS
+def introduce(name, track = "AI Engineering"):
+    print("My name is", name)
+    print("I am learning", track)
 
-# function call
-# Without specifying the default argument, but watch the ouput
-#introduce("Paul") 
+#function call
+#Without specifying the default argument, but watch the ouput
+introduce("Paul") 
 
-# Specify the default argument and watch the output
+#Specify the default argument and watch the output
 
 introduce("Tunji Paul", track = "AI Development")
