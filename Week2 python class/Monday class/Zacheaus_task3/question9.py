@@ -1,0 +1,7 @@
+words= input("Enter a sentence:")
+a=words.count("a")
+e=words.count("e")
+i=words.count("i")
+o=words.count("o")
+u=words.count("u")
+print(float(a)+float(e)+float(i)+float(o)+float(u))

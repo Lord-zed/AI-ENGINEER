@@ -1,1 +1,0 @@
-string= "i love python"
