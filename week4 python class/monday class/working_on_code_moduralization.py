@@ -176,14 +176,87 @@
 # introduce(track = "AI Engineering",name = "Ngozi")
 
 #DEFAULT ARGUMENTS
-def introduce(name, track = "AI Engineering"):
-    print("My name is", name)
-    print("I am learning", track)
+# def introduce(name, track = "AI Engineering"):
+#     print("My name is", name)
+#     print("I am learning", track)
 
 #function call
 #Without specifying the default argument, but watch the ouput
-introduce("Paul") 
+#introduce("Paul") 
 
 #Specify the default argument and watch the output
 
-introduce("Tunji Paul", track = "AI Development")
+#introduce("Tunji Paul", track = "AI Development")
+
+## My practice
+# def introduce(name, track):
+#     print("My name is", name)
+#     print("I study", track)
+
+# introduce("Zacheaus","AI-Engineering")
+
+# Another practice
+# def introduce(name="Zacheaus", track="AI_Engineering"):
+#     print("my name is", name,"i study",track)
+
+# introduce()
+# introduce("Taiwo")
+
+## Another practice
+# def add(a,b):
+#     return a + b
+# result= add(5, 9)
+# print("My result is:", result)
+
+# def add(a=20,d=30):
+#     result= a + d
+#     print("my answer is:", result)
+
+
+# add()
+# add(20,10)
+
+# VARYING LENGTH
+# Non keyword(tuple)
+# def add_number(*args):
+#     total=0
+#     for num in args:
+#         total += num
+#     print("sum", total)
+
+# # function call
+# # Take note of the output
+# add_number(2,4,6)
+# add_number(10, 20, 30, 40, 50)
+
+# ## MY PRACTICE
+# def add(*args):
+#     total=2
+#     for num in args:
+#         total += num
+#     print("sum is:", total)
+# add(4,6,8)
+
+# ## PRACTISE
+# def lists(*args):
+    
+#     for names in args:
+#         print("my name is:", names)
+# lists(input("Enter your name:"))
+
+## PRACTICE
+# def adds(*args):
+#     std_score=int(input("Enter your standard score:"))
+#     for cats in args:
+#         (std_score) += cats
+#     print("my total score is:", std_score)
+# adds(10,20,30)
+
+
+# KEYWORDS ARGUMENTS
+def student_details(**kwargs):
+    for key, value in kwargs.items():
+        print(key, ":", value)
+
+student_details(name="Zcheaus", track="AI_Engineer", interest="Data scientist")
+
