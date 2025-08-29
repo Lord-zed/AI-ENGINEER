@@ -3,11 +3,11 @@
 # for i in range(3):
 #     print(i)
 
-# zip()
-# names=["esther","precious","kennie"]
-# scores=[85,90,75]
-# for names, scores in zip(names, scores):
-#     print(names,"scored", scores)
+#zip()
+names=["esther","precious","kennie"]
+scores=[85,90,75]
+for names, scores in zip(names, scores):
+    print(names,"scored", scores)
 
 # It's Ok, if don't know what lambda is  or how to use it. I will touch on it later. Just focus on  the outputs
 # map()
@@ -254,9 +254,17 @@
 
 
 # KEYWORDS ARGUMENTS
-def student_details(**kwargs):
-    for key, value in kwargs.items():
-        print(key, ":", value)
+# def student_details(**kwargs):
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
 
-student_details(name="Zcheaus", track="AI_Engineer", interest="Data scientist")
+# student_details(name="Zcheaus", track="AI_Engineer", interest="Data scientist")
 
+def square(x):
+    return x ** 2
+
+# Lambda function
+square_lambda = lambda x: x ** 2
+
+print(square(5))         
+print(square_lambda(5))  
