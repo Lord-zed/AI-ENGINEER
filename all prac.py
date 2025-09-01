@@ -387,4 +387,7 @@ try:
     balance -= amount
     print("Withdrawal successful, new balance : N",balance)
 
+#functions
+def greet(name):
+    print("Hello", name, "welcome to python")  
     

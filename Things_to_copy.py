@@ -93,7 +93,42 @@
 #     print("Invalid choice")
 
 # zip()
-names = ["Esther", "Precious", "Kennie"]
-scores = [85, 90, 75]
-for n, s in zip(names, scores):
-    print(n, "scored", s)
+# names = ["Esther", "Precious", "Kennie"]
+# scores = [85, 90, 75]
+# for n, s in zip(names, scores):
+#     print(n, "scored", s)
+
+# Function with an argument - the placeholder
+# def greet(name):
+#     print("Hello", name, "welcome to Python learning!")
+
+# # Calling with parameter- the actual name
+# greet("Class rep")
+# greet("Ridwan")
+
+# def add(a, b):
+#     return a + b
+
+# # Function call
+
+# result = add(4, 6)
+# print("The sum is:", result)
+
+def add_numbers(*args):
+    total = 0
+    for num in args:
+        total += num
+    print("Sum:", total)
+
+# function call 
+# Take note of the output
+add_numbers(2, 4, 6)
+add_numbers(10, 20, 30, 40, 50)
+
+def student_details(**kwargs):
+    for key, value in kwargs.items():
+        print(key, ":", value)
+
+
+# function call - Take note of the output
+student_details(name="Peter", track = "AI Engineering", interest="Block Chain")
