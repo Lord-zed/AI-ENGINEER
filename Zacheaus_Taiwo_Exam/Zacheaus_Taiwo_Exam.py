@@ -29,7 +29,7 @@ while True:
 
 # Take input from the user for operation choice
       choice = input("Enter choice (1/2/3/4/5): ")
-      if choice == 'exit':
+      if choice == '5':
         print("Good bye")
         break
 
