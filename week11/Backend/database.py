@@ -91,21 +91,22 @@ create_tables_query = text("""
 CREATE TABLE IF NOT EXISTS users (
     id  INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL                       
                            );
 CREATE TABLE IF NOT EXISTS courses (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100) NOT NULL,
     level VARCHAR(100) NOT NULL
      );
-CREATE TABLE IF NOT EXISTS enrollment (
+CREATE TABLE IF NOT EXISTS enrollment (                                                                                                                                                               
     id INT AUTO_INCREMENT PRIMARY KEY,
     userId INT,
     courseId INT,
     FOREIGN KEY (userId) REFERENCES users(id),
     FOREIGN KEY (courseId) REFERENCES courses(id)
           );
-# """)
-
-print("Tables have been created successfully.")
+ """)
 db.execute(create_tables_query)
+print("Tables have been created successfully.")
+
